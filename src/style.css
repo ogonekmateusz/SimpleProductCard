@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700);
+
+:root {
+  --background-color: #aedaa6;
+  --font-family: "Raleway";
+  --text-color: #333;
+  --border-color: #f0f0f0;
+  --hover-border-color: #aedaa6;
+  --box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+    0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: var(--background-color);
+  font-family: var(--font-family);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.productCard {
+  background: white;
+  margin: 0 auto;
+  box-shadow: var(--box-shadow);
+  transition: all 0.3s;
+}
+
+.header {
+  border-bottom: 2px solid var(--border-color);
+  padding: 10px;
+}
+
+.header a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.heartBtn i {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.productInfo {
+  border-left: 1px solid var(--border-color);
+}
+
+.productImage {
+  border-right: 1px solid var(--border-color);
+}
+
+.productInfo h2 {
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.productInfo h4 {
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+
+.productInfo .productPrice {
+  font-size: 35px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.productInfo .productDescription {
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--text-color);
+}
+
+.actionButtons .btn {
+  color: var(--text-color);
+  border: none;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 0;
+  border: 2px solid var(--border-color);
+}
+
+.actionButtons .btn:hover {
+  border: 2px solid var(--hover-border-color);
+}
