@@ -44,6 +44,14 @@ body {
   font-size: 15px;
 }
 
+.header a:hover {
+  color: var(--text-color);
+}
+
+.heartBtn {
+  border: none;
+}
+
 .heartBtn i {
   font-size: 18px;
   cursor: pointer;
